@@ -1,0 +1,226 @@
+  <!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KAKAO — Chocolate orgánico de lujo.">
+  <title>KAKAO — Chocolate Orgánico de Lujo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header" aria-label="Navegación principal">
+      <div class="header-inner">
+        <button class="logo" data-view="home" aria-label="Kakao, inicio">
+          <span class="logo-mark">K</span><span>Kakao</span>
+        </button>
+        <nav class="header-actions" aria-label="Acciones">
+          <button class="icon-btn" data-action="menu" aria-label="Abrir menú Más"><span>☰</span><span class="label">MÁS</span></button>
+          <button class="icon-btn" data-action="search" aria-label="Buscar productos"><span>⌕</span><span class="label">BUSCAR</span></button>
+          <button class="icon-btn" data-action="cart" aria-label="Abrir carrito"><span>🛒</span><span class="cart-count" aria-live="polite">0</span></button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- HOME -->
+      <section class="view is-active" data-view-panel="home">
+        <section class="hero">
+          <div class="hero-bg"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-mark">K</div>
+            <div class="hero-logo">KAKAO</div>
+            <p class="hero-kicker">Del Ecuador al Mundo — Chocolate Orgánico de Lujo</p>
+            <button class="gold-button" data-view="store">DESCUBRIR LA COLECCIÓN</button>
+            <span class="scroll-hint">DESPLAZAR ↓</span>
+          </div>
+        </section>
+
+        <section class="selection section">
+          <div class="section-heading">
+            <p class="eyebrow">COLECCIÓN</p>
+            <h1>Nuestra Selección</h1>
+            <span class="heading-line"></span>
+          </div>
+          <div id="featured-grid" class="product-grid product-grid--featured"></div>
+        </section>
+
+        <section class="earth-story">
+          <div class="earth-image"></div>
+          <div class="earth-copy">
+            <p class="eyebrow">NUESTRA TIERRA</p>
+            <h2>Donde Nace el Sabor</h2>
+            <p>
+              Nuestros árboles de Cacao Nacional heredan el legado de las tierras más fértiles
+              del Ecuador. Cultivamos granos orgánicos excepcionales de aroma floral y sabor profundo,
+              refinados con el máximo rigor artesanal.
+            </p>
+            <button class="outline-button" data-view="story">CONOCER NUESTRA HISTORIA</button>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- STORE -->
+      <section class="view" data-view-panel="store">
+        <div class="page-intro">
+          <p class="eyebrow">COLECCIÓN KAKAO</p>
+          <h1>La Tienda</h1>
+          <p>Explore nuestra colección de chocolates finos de aroma, cultivados orgánicamente y refinados artesanalmente.</p>
+        </div>
+
+        <div class="filters" aria-label="Filtros">
+          <button class="filter-button" data-filter="cacao">1. Cacao en polvo</button>
+          <button class="filter-button" data-filter="tabletas">2. Tabletas</button>
+          <button class="filter-button" data-filter="bombones">3. Bombones</button>
+        </div>
+        <div id="store-grid" class="product-grid"></div>
+      </section>
+
+      <!-- PRODUCT DETAIL -->
+      <section class="view" data-view-panel="product">
+        <div id="product-detail-view"></div>
+      </section>
+
+      <!-- STORY -->
+      <section class="view" data-view-panel="story">
+        <section class="story-hero">
+          <div class="story-image"></div>
+          <div class="story-copy">
+            <p class="eyebrow">NUESTRA HERENCIA</p>
+            <h1>Nuestra Historia</h1>
+            <p>
+              Fundada en el corazón de las regiones cacaoteras más fértiles de Ecuador, KAKAO
+              nació con el firme propósito de rescatar el Cacao Nacional Fino de Aroma.
+              Nuestro compromiso se arraiga en la agricultura orgánica y el comercio justo con
+              pequeños productores locales, fusionando este místico fruto con técnicas ancestrales
+              y la precisión de la chocolatería fina europea.
+            </p>
+          </div>
+        </section>
+
+        <section class="section pillars">
+          <div class="section-heading">
+            <h2>Nuestros Pilares</h2>
+            <span class="heading-line"></span>
+          </div>
+          <div class="pillar-grid">
+            <article class="pillar-card"><span class="pillar-icon">⌾</span><h3>Origen Único</h3><p>Trazabilidad absoluta desde fincas exclusivas en Esmeraldas, Manabí y Los Ríos hasta cada una de nuestras barras.</p></article>
+            <article class="pillar-card"><span class="pillar-icon">✧</span><h3>Proceso Artesanal</h3><p>Refinado lento y templado riguroso, garantizando la textura sedosa y el brillo característico que define al chocolate real.</p></article>
+            <article class="pillar-card"><span class="pillar-icon">♢</span><h3>Compromiso Orgánico</h3><p>Certificación bio-integral libre de agroquímicos, honrando los ciclos naturales de la tierra y la salud de sus cuidadores.</p></article>
+          </div>
+        </section>
+
+        <section class="section team">
+          <div class="section-heading">
+            <h2>Nuestro Equipo</h2>
+            <span class="heading-line"></span>
+          </div>
+          <div class="team-grid">
+            <article><img src="assets/equipo-elena.png" alt="Retrato de Elena Mendoza"><h3>Elena Mendoza</h3><p>MAESTRA CHOCOLATERA</p></article>
+            <article><img src="assets/equipo-mateo.png" alt="Retrato de Mateo Andrade"><h3>Mateo Andrade</h3><p>DIRECTOR DE CULTIVO</p></article>
+            <article><img src="assets/equipo-carlos.png" alt="Retrato de Carlos Viteri"><h3>Carlos Viteri</h3><p>FUNDADOR & CURADOR</p></article>
+          </div>
+        </section>
+      </section>
+
+      <!-- MORE -->
+      <section class="view" data-view-panel="more">
+        <div class="page-intro page-intro--compact">
+          <p class="eyebrow">KAKAO</p>
+          <h1>Sobre los Productos</h1>
+          <p>El cacao ecuatoriano de aroma fino es el punto de partida de una colección pensada para degustar, regalar y descubrir.</p>
+        </div>
+
+        <section class="more-feature">
+          <div class="more-visual"></div>
+          <div class="more-copy">
+            <p class="eyebrow">DEL GRANO A LA BARRA</p>
+            <h2>Artesanía en cada detalle</h2>
+            <p>Seleccionamos cacao de origen único y lo transformamos con procesos lentos que respetan sus notas naturales. La colección reúne diferentes formatos para distintos momentos de degustación.</p>
+            <div class="more-list">
+              <div><span>Tabletas</span></div>
+              <div><span>Bombones</span></div>
+              <div><span>Cacao en polvo</span></div>
+            </div>
+            <button class="outline-button" data-view="store">EXPLORAR COLECCIÓN</button>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h2>Una experiencia KAKAO</h2>
+            <span class="heading-line"></span>
+          </div>
+          <div class="experience-grid">
+            <article><span>01</span><h3>Origen</h3><p>El carácter del cacao comienza en su territorio y en la trazabilidad de cada cosecha.</p></article>
+            <article><span>02</span><h3>Textura</h3><p>Procesos precisos para lograr una experiencia limpia, profunda y persistente.</p></article>
+            <article><span>03</span><h3>Degustación</h3><p>Formatos pensados para compartir, regalar o disfrutar lentamente.</p></article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div><h3>KAKAO</h3><p>Chocolate y cacao de origen, presentado con una mirada contemporánea y artesanal.</p></div>
+        <div><h3>Explorar</h3><div class="footer-links"><button data-view="home">Inicio</button><button data-view="store">Tienda</button><button data-view="story">Nuestra historia</button><button class="cart-trigger">Carrito</button></div></div>
+        <div><h3>Conecta</h3><div class="footer-links"><a href="https://wa.me/" target="_blank" rel="noopener">WhatsApp</a><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a></div></div>
+      </div>
+      <div class="footer-bottom">© 2026 KAKAO. Proyecto local.</div>
+    </footer>
+  </div>
+
+  <!-- MENU -->
+  <div class="overlay menu-overlay" aria-hidden="true">
+    <div class="menu-backdrop" data-close-menu></div>
+    <aside class="side-panel" aria-label="Menú lateral">
+      <div class="panel-top">
+        <button class="brand brand--panel" data-view="home"><span class="brand-mark">ↄ</span><span>KAKAO</span></button>
+        <button class="close-button" data-close-menu aria-label="Cerrar menú">×</button>
+      </div>
+      <nav class="side-nav">
+        <button class="nav-item nav-item--parent" data-view="store">La Tienda <span>›</span></button>
+        <div class="subnav">
+          <button data-view="store">Tabletas</button>
+          <button data-view="store">Bombones</button>
+          <button data-view="store">Cacao en Polvo</button>
+        </div>
+        <button class="nav-item" data-view="more">Sobre los Productos</button>
+        <button class="nav-item" data-view="story">Sobre la Corporación</button>
+      </nav>
+      <div class="panel-socials"><span>■</span><span>f</span><span>●</span></div>
+    </aside>
+  </div>
+
+  <!-- CART -->
+  <div class="overlay cart-overlay" aria-hidden="true">
+    <div class="menu-backdrop" data-close-cart></div>
+    <aside class="cart-panel" aria-label="Carrito de compras">
+      <div class="cart-head"><h2>Tu Carrito</h2><button class="close-button" data-close-cart aria-label="Cerrar carrito">×</button></div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <div class="summary-line"><span>Subtotal</span><strong id="cart-total">$0.00</strong></div>
+        <p>Envío calculado al finalizar</p>
+        <button class="gold-button gold-button--wide" id="checkout-button">FINALIZAR COMPRA</button>
+        <button class="continue-link" data-close-cart>Continuar Comprando</button>
+      </div>
+    </aside>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div class="overlay search-overlay" aria-hidden="true">
+    <div class="menu-backdrop" data-close-search></div>
+    <section class="search-panel" role="dialog" aria-label="Buscar productos">
+      <div class="search-head"><div><p class="eyebrow">CATÁLOGO</p><h2>Buscar</h2></div><button class="close-button" data-close-search aria-label="Cerrar búsqueda">×</button></div>
+      <input id="search-input" class="search-input" type="search" placeholder="Escribe un producto o categoría..." autocomplete="off">
+      <div id="search-results" class="search-results"></div>
+    </section>
+  </div>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
+ 
