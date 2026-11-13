@@ -226,3 +226,41 @@ img{max-width:100%;display:block}
   .search-panel{padding:35px 7%}
   .search-input{margin-top:35px;font-size:18px}
 }
+
+/* Ajuste móvil: evita que el catálogo conserve un ancho parcial
+   y deje una franja vacía a la derecha junto al social toggle. */
+@media (max-width:459px){
+  html,body{
+    width:100%;
+    min-width:0;
+    overflow-x:hidden;
+  }
+  .app-shell,
+  #main-content,
+  .view,
+  .view.is-active{
+    width:100%;
+    min-width:0;
+    max-width:100%;
+  }
+  .product-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    width:100%;
+    min-width:0;
+    max-width:100%;
+    margin-left:0;
+    margin-right:0;
+  }
+  .product-card{
+    width:100%;
+    min-width:0;
+  }
+  .social-wrap{
+    position:fixed;
+    right:16px;
+    bottom:16px;
+    z-index:60;
+  }
+}
+
